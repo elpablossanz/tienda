@@ -12,7 +12,7 @@ export class ArticuloService {
   constructor(private http: HttpClient) { }
 
   public obtenerArticulosRest(): Observable<IArticulo[]>{
-    const urlEndPoint:string ="http://localhost:3001/Items";
+    const urlEndPoint:string ="http://localhost:3003/Items";
     return this.http.get<IArticulo[]>(urlEndPoint);
   }
 }
